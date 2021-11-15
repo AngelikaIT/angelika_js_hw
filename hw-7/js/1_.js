@@ -20,25 +20,27 @@
 //   "10:30 ": "Завтрак",
 // }
 
-// const userSchedule = {};
+const userSchedule = {};
 
-// let key;
-// let value;
+function getUserSchedule () {
 
-// do {
-//     key = prompt ("На какое время записать задачу?");
-//     value = prompt ("Какую задачу записать?");
+    let key;
+    let value;
 
-//     if (key === null || value === null) {
-//         break;
-//     } userSchedule[key] = value;
+    do {
+        key = prompt ("На какое время записать задачу?");
+        value = prompt ("Какую задачу записать?");
 
-// } while (key !== null || value !== null);
+        if (key === null || value === null) {
+            break;
+        } userSchedule[key] = value;
 
-// console.log (userSchedule); 
+    } while (key !== null || value !== null);
 
+    return userSchedule;
+};
 
-
+console.log(getUserSchedule());
 
 
 
