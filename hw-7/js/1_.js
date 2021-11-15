@@ -20,10 +20,11 @@
 //   "10:30 ": "Завтрак",
 // }
 
-const userSchedule = {};
+
 
 function getUserSchedule () {
-
+    
+    const userSchedule = {};
     let key;
     let value;
 
