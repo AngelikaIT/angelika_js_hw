@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+          font-family: sans-serif;
+        }
+  
+        .example-div {
+          font-size: 18px;
+          margin: 20px 0;
+          border: 2px solid black;
+          width: 400px;
+          border-radius: 10px;
+          text-align: center;
+          padding: 30px 20px;
+        }
+  
+        .example-input {
+          display: inline-block;
+          padding: 10px;
+          border: 1px solid black;
+          margin: 20px 0;
+          width: 300px;
+          border-radius: 5px;
+          font-size: 18px;
+        }
+  
+        .example-input:disabled {
+          background-color: azure;
+        }
+  
+        .button {
+          display: inline-block;
+          margin-left: 10px;
+          padding: 10px;
+          border: 1px solid black;
+          background-color: #fff;
+          font-size: 18px;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+  
+        .titles {
+          list-style: none;
+          padding: 0;
+          margin: 20 0;
+        }
+  
+        .title {
+          font-size: 32px;
+          margin-bottom: 16px;
+          cursor: pointer;
+        }
+  
+        .title[data-selected] {
+          font-weight: 700;
+        }
+  
+        .language-logo {
+          width: 400px;
+          height: auto;
+        }
+      </style>
+    <title>cw-14.1</title>
+</head>
+<body>
+    <div class="test example-div" id="exampleOne">First Example</div>
+    <div>
+      <input
+        type="text"
+        name="exapmle_input"
+        id="exampleTwo"
+        class="example-input"
+        placeholder="Type something..."
+      />
+    </div>
+    <div>
+      <img
+        style="width: 200px"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/512px-Unofficial_JavaScript_logo_2.svg.png"
+        alt="Js Image"
+        id="exampleThree"
+      />
+    </div>
+
+    <div>
+      <label for="exampleFour">
+        Example for working with attributes
+
+        <input
+          type="text"
+          name="exapmle_input"
+          id="exampleFour"
+          class="example-input"
+          placeholder="Type something..."
+          value="123"
+        />
+      </label>
+      <button class="button" id="attrAction">Click me for test!</button>
+    </div>
+
+    <div>
+      <div class="example-five" id="exampleFive"></div>
+    </div>
+
+    <div>
+      <p class="price" data-has-discount="true">100</p>
+      <p class="price" data-has-discount="false">90</p>
+      <p class="price" data-has-discount="true">200</p>
+    </div>
+
+    <div>
+      <ul class="titles" id="titles">
+        <li class="title" data-content="js" >JS</li>
+        <li class="title" data-content="c#" data-selected>C#</li>
+        <li class="title" data-content="java">JAVA</li>
+      </ul>
+      <div class="images">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png"
+          alt="js logo"
+          data-title="js"
+          class="language-logo"
+        />
+        <img
+          src="https://miro.medium.com/max/1200/1*w0u2TZpEp3WfKMrlL5jTSw.png"
+          alt="c# logo"
+          data-title="c#"
+          class="language-logo"
+        />
+        <img
+          src="https://independentview.net/wp-content/uploads/2016/03/javalogo.png"
+          alt="java logo"
+          data-title="java"
+          class="language-logo"
+        />
+      </div>
+    </div>
+    <script src="./js/js.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div {
+          margin-bottom: 24px;
+        }
+  
+        .form-vertical {
+          display: flex;
+          flex-direction: column;
+        }
+  
+        .form-vertical * {
+          margin-bottom: 12px;
+        }
+      </style>
+    <title>cw-14.2</title>
+</head>
+<body>
+    <div>
+        <form id="login-form" class="form-vertical" action="#" method="GET">
+          <input type="number" name="login" id="login" placeholder="login" />
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="password"
+          />
+          <button type="submit">Войти</button>
+        </form>
+      </div>
+  
+      <div id="example-container">
+        <input type="text" name="example" id="example" placeholder="Type something" />
+      </div>
+  
+      <div>
+        <select id="example-select">
+          <option value="orange">Апельсин</option>
+          <option value="apple">Яблоко</option>
+        </select>
+      </div>
+  
+      <div>
+        <input type="checkbox" name="example-checkbox" id="example-checkbox" />
+        <label for="example-checkbox"> Test checkbox </label>
+      </div>
+  
+  
+      <div>
+        <input type="radio" name="gender" value="male" id="male" />
+        <label for="male">Male</label>
+        <input type="radio" name="gender" value="female" id="female" />
+        <label for="female">Female</label>
+        <input type="radio" name="gender" value="other" id="others" />
+        <label for="others">Other</label>
+      </div>
+  
+      <div>
+        <input
+          type="text"
+          id="amount"
+          name="amount"
+          placeholder="Введите сумму UAH"
+        />
+        <select name="currency" id="currency-select">
+          <option value="USD">Доллар</option>
+          <option value="EUR">Евро</option>
+        </select>
+        <span id="result"> 0.00 </span>
+      </div>
+  
+      <div>
+        <form id="form-data-example" class="form-vertical">
+          <input type="text" name="surname" placeholder="surname" />
+          <input type="text" name="name" placeholder="name" />
+          <input type="password" name="password" placeholder="password" />
+          <button type="submit">Подтвердить</button>
+        </form>
+      </div>
+    <script src="./js/js.js"></script>
+</body>
+</html>
