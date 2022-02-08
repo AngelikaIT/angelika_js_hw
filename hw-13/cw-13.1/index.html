@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cw-13.1</title>
+    <style>
+        body {
+          font-family: sans-serif;
+        }
+  
+        div {
+          margin-bottom: 16px;
+        }
+  
+        .btn {
+          color: black;
+          /* border: 1px solid black; */
+          font-family: monospace;
+          font-size: 16px;
+          border-width: 2px;
+          border-radius: 0;
+          padding: 6px 12px;
+        }
+  
+        .btn-clicked {
+          color: #fff;
+          background-color: black;
+        }
+  
+        .wrapper {
+          border: 2px solid black;
+          padding: 8px;
+        }
+  
+        .wrapper * {
+          border: 1px solid black;
+          display: block;
+          padding: 4px;
+        }
+  
+        .squares {
+          width: 500px;
+          height: 500px;
+          display: grid;
+          grid-gap: 10px;
+          grid-template-columns: repeat(5, 1fr);
+          grid-template-rows: repeat(5, 1fr);
+        }
+  
+        .square {
+          background-color: black;
+          margin: 0;
+          color: #fff;
+          text-align: center;
+          font-size: 20px;
+          font-weight: 700;
+        }
+      </style>
+</head>
+<body>
+    <div>
+        <button class="btn" id="htmlAttr" onclick="eventHandler()">
+          HTML Attribute
+        </button>
+        <button class="btn" id="domProp">Dom Property</button>
+        <button class="btn" id="eventListener">addEventListener</button>
+      </div>
+  
+      <div>
+        <button class="btn" id="eventExample">Event Example</button>
+      </div>
+  
+      <div class="wrapper" id="wrapper">
+        <h3>Hello!</h3>
+        <span>I am example!</span>
+      </div>
+  
+      <div>
+        <p id="test">Element for removing listener</p>
+      </div>
+      
+      <div class="squares" id="squares">
+        <div class="square">1</div>
+        <div class="square">2</div>
+        <div class="square">3</div>
+        <div class="square">4</div>
+        <div class="square">5</div>
+        <div class="square">6</div>
+        <div class="square">7</div>
+        <div class="square">8</div>
+        <div class="square">9</div>
+        <div class="square">10</div>
+      </div>
+    
+    <script src="./js/js.js"></script>
+</body>
+</html>

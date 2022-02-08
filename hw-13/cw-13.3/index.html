@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cw-13.3</title>
+    
+  <style>
+
+    .container {
+      height: 500px;
+      position: relative;
+      transition: ease-out 500ms;
+      background: rgb(255, 255, 255);
+      border: 2px solid black;
+      overflow: hidden;
+      margin: 10px;
+    }
+
+    .ball {
+      background-color: #fff;
+      position: absolute;
+      border-radius: 50%;
+      border: 2px solid black;
+      z-index: 2;
+    }
+
+    .hole {
+      border: 2px solid black;
+      width: 150px;
+      height: 150px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  </style>
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="hole" id="hole"></div>
+      </div>
+
+      <script src="./js/js.js"></script>
+</body>
+</html>
