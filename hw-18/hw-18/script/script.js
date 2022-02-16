@@ -20,7 +20,7 @@
 
 // c разбора:
 
-const container = document.getElementById("container");
+const container = document.getElementById("posts");
 
 const postsRequest = new XMLHttpRequest();
 postsRequest.open("GET", "https://jsonplaceholder.typicode.com/posts");
